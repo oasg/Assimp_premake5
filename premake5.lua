@@ -14,10 +14,12 @@ project 'assimp'
         'assimp/contrib/pugixml/src',
 		--'assimp/contrib/irrXML/',
 		'assimp/contrib/unzip/',
+		'assimp/contrib/zlib/',
 		'assimp/contrib/rapidjson/include/',
 		'assimp/code',
         "assimp/include",
         "assimp/include/AssetLib"
+
 	}
 	files {
 		-- Dependencies
@@ -45,7 +47,7 @@ project 'assimp'
 	-- Importers
 	defines {
          -- "SWIG",
-        'ASSIMP_BUILD_NO_OWN_ZLIB',
+        --'ASSIMP_BUILD_NO_OWN_ZLIB',
 		'ASSIMP_BUILD_NO_3D_IMPORTER',
 		'ASSIMP_BUILD_NO_3DS_IMPORTER',
 		'ASSIMP_BUILD_NO_3MF_IMPORTER',
